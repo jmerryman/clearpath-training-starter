@@ -6,10 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cache:inspect": "node scripts/cache-inspector.js",
+    "cache:clear": "node scripts/cache-inspector.js --clear-cache",
+    "cache:clear-all": "node scripts/cache-inspector.js --clear-all"
   },
   "dependencies": {
     "@prisma/client": "^6.10.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "better-sqlite3": "^12.1.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
